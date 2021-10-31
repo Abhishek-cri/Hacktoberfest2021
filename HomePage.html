@@ -25,7 +25,65 @@
  .container-fluid{
     background: #DFF0D8;
  } 
- 
+ footer{
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer .social-icon,
+footer .menu
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+footer .social-icon li,
+footer .menu li
+{
+    list-style: none;
+}
+footer .social-icon li a
+{
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+footer .social-icon li a:hover{
+    transform: translate(-10px);
+}
+footer .menu li a
+{
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+}
+footer .menu li a:hover{
+    opacity: 1;
+}
+footer p{
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.0em;
+}
+.title{
+  color: rgb(14, 1, 44);
+  font-size: 30px;
+}
   </style>
 </head>
 <body>
@@ -130,23 +188,30 @@
 <!-- End Of Main Page -->
 
 <!-- Footer Begins -->
-<div class="jumbotron text-center" style="margin-bottom:0">
+<footer>
+  <h1 class="title">Explore!</h2>
+  <ul class="social-icon">
+      <li><a href="#"><ion-icon name="logo-instagram" target="_blank"></ion-icon></a></li>
+      <li><a href="#"><ion-icon name="logo-twitter" target="_blank"></ion-icon></a></li>
+      <li><a href="#"><ion-icon name="logo-github" target="_blank"></ion-icon></a></li>
+      <li><a href="#"><ion-icon name="logo-linkedin" target="_blank"></ion-icon></a></li>
 
-<!-- <footer class="page-footer font-small blue fixed-bottom"> -->
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2021 Design ProjectCopyright:
-    <a href="https://mdbootstrap.com/"> FcsTeam</a>
-  </div>
-  <!-- Copyright -->
-
-<!-- </footer> -->
-
-</div>
+  </ul>
+  <ul class="menu">
+      <li><a href="#">My Friends</a></li>
+      <li><a href="#">Recommendations</a></li>
+      <li><a href="#">Log Out</a></li>
+      <li><a href="#">Discover More</a></li>
+  </ul>
+  <p><i class="far fa-copyright"></i> 2021 Design ProjectCopyright: </p>
+  <h5><a href="https://mdbootstrap.com/" style="color: #fff;">FcsTeam</a></h5>
+</footer>
 <!-- FOOTER ENDS -->
 
 <!-- JS -->
-
+<script src="https://kit.fontawesome.com/ae6012157e.js" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
